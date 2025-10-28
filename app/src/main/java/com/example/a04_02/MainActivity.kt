@@ -55,9 +55,9 @@ class CounterViewModel: ViewModel() {
 
 
     //interval for auto mode
-    fun setInterval(newInterval: Long) {
-        if (newInterval > 0) {
-            _interval.value = newInterval
+    fun setInt(newInt: Long) {
+        if (newInt > 0) {
+            _interval.value = newInt
         }
     }
 
@@ -144,7 +144,7 @@ fun CounterScreen(viewModel: CounterViewModel, modifier: Modifier = Modifier) {
         Button(
             onClick = {
                 intervalInput.toLongOrNull()?.let {
-                    viewModel.setInterval(it)
+                    viewModel.setInt(it)
                 }
             },
             modifier = Modifier.padding(top = 8.dp)
