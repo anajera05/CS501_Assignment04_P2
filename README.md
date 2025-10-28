@@ -1,0 +1,1 @@
+Counter application. Click + to add and - to subtract. You can reset the counter back to zero, or have an automatic timer. You can chnage the speed of the timer by changing the milliseconds and applying the changes
